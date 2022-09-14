@@ -3,7 +3,7 @@
   <div class="col"></div>
   <img :src="dev33" />
   <el-button>Default</el-button>
-  <el-button type="primary">Primary</el-button>
+  <el-button @click="demoClik" type="primary">Primary</el-button>
   <el-button type="success">Success</el-button>
   <el-button type="info">Info</el-button>
   <el-button type="warning">Warning</el-button>
@@ -11,16 +11,27 @@
 </template>
 
 <script lang="ts">
+<<<<<<< HEAD
 import img33 from "@/assets/img/1.jpg";
+=======
+import {pingGuo} from "@assets/js/shuiguo"
+import img33 from "@assets/img/1.jpg";
+
+>>>>>>> e6f8dd2541b12ae026e60dd1e00f27dc627dea99
 export default {
   data() {
     return {
       dev33: img33,
     };
   },
+  methods: {
+    demoClik(){
+  }
+  }
+  
 };
 </script>
 
 <style>
-@import url("@/assets/css/demo.css");
+@import url("@assets/css/demo.css");
 </style>
