@@ -10,7 +10,7 @@
   <el-button type="danger">Danger</el-button>
 </template>
 
-<script>
+<script lang="ts">
 import img33 from "@/assets/img/1.jpg";
 export default {
   data() {
