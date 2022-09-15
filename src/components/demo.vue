@@ -13,6 +13,8 @@
 <script lang="ts">
 import {pingGuo} from "@assets/js/shuiguo"
 import img33 from "@assets/img/1.jpg";
+import { EggRobot,UpdateVisitor } from '@assets/js/访问者模式';
+import { vi } from 'element-plus/es/locale';
 
 export default {
   data() {
@@ -22,8 +24,11 @@ export default {
   },
   methods: {
     demoClik(){
-    var pingguo = new pingGuo();
-    console.log(pingguo.kouWei())
+    let robot = new EggRobot();
+    robot.calc();
+    let visitor = new UpdateVisitor();
+    robot.shengji(visitor);
+    robot.calc()
   }
   }
   

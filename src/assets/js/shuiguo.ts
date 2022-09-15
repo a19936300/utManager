@@ -23,14 +23,12 @@ export class pingGuo implements IShuiGuo {
 }
 
 
-const x: unique symbol = Symbol();
-const y:symbol = Symbol();
-
-interface Foo {
-    [x]: string;
-    readonly b:unique symbol;
-}
-
-class C {
-    static readonly c:unique symbol = Symbol();
+class RangeValidationBase {
+    constructor(private start:number,private end:number){}
+    protected RangeCheck(value:number):boolean{
+        return value >= this.start && value <= this.end;
+    }
+    protected GetNumber(value:string):number{
+        return new Number(value).valueOf();
+    }
 }
