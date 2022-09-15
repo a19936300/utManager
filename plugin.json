@@ -1,11 +1,14 @@
 {
 	"main": "index.html",
-	"logo": "logo.png",
+	"logo": "logo.jpg",
 	"features": [
 		{
 		  "code": "hello",
 		  "explain": "hello world",
 			"cmds":["hello", "你好"]
 		}
-	]
+	],
+	"development": {
+		"main": "http://127.0.0.1:31001/index.html"
+	}
 }

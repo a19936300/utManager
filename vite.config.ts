@@ -16,5 +16,8 @@ export default defineConfig({
         replacement: resolve(__dirname,"src/assets")
       }
     ]
+  },
+  server: {
+    port: 31001
   }
 })
