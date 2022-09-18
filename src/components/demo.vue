@@ -11,13 +11,10 @@
 </template>
 
 <script lang="ts">
-<<<<<<< HEAD
-import img33 from "@/assets/img/1.jpg";
-=======
+
 import {pingGuo} from "@assets/js/shuiguo"
 import img33 from "@assets/img/1.jpg";
 
->>>>>>> e6f8dd2541b12ae026e60dd1e00f27dc627dea99
 export default {
   data() {
     return {
